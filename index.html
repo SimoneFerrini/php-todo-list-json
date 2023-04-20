@@ -17,7 +17,17 @@
 </head>
 <body>
     <div id="app">
-        
+        <div class="container">
+            <h1>Todos List: </h1>
+            <ul>
+                <li v-for="todo in todos">{{todo.name}}</li>
+            </ul>
+            <hr>
+            <div>
+                <input v-model="addingTodo" type="text" placeholder="Inserire nuovo ToDo" @keyup.enter="addToDo()" class="my-input-style">
+                <button class="my-btn-add" @click="addToDo()" >Aggiungi</button>
+            </div>
+        </div>
     </div>    
 
 
