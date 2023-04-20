@@ -1,3 +1,39 @@
+
+.my-main-bg{
+    background-color: rgb(39, 39, 90);
+    height: 100%;
+    width: 100%;
+
+    padding:4em 0;
+}
+
+.my-container{
+    
+    width: 50%;
+    margin: 0 auto;
+    padding: 1.5em;
+
+    background-color: antiquewhite;
+}
+
+.my-li-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.btn-delete{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+
+    padding: 0.3em 0.5em;
+}
+
 .my-input-style{
     padding: 0.5em 1em;
 }
@@ -13,4 +49,8 @@
     cursor: pointer;
     background-color: rgb(255, 225, 0);
     color: rgb(41,41,41);
+}
+
+.my-active{
+    text-decoration: line-through;
 }
