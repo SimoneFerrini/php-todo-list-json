@@ -1,12 +1,15 @@
 <?php
 
-if(isset($_POST['newTodo'])){
+if(isset($_POST['name'])){
     //se ricevo parametro lo aggiungo a file json:
     $todos = json_decode(file_get_contents("todos.json"));
-    print_r($todos);
-    $todos[] = $_POST['newTodo'];
+    
+    $newTodo = [
+        'name' => $_POST['name'],
+        'done' => false,
+    ];
 
-    print_r($todos);
+    $todos[] = $newTodo;
 
     $newTodoJSON = json_encode($todos);
 

@@ -23,11 +23,12 @@ createApp({
             this.todos.push(newTodo);
             this.addingTodo = "";
 
+            console.log(newTodo);
+
             //inizio milestone 3:
             axios.post("./server.php", newTodo, {headers:{'Content-Type' : 'multipart/form-data'}}).then(res =>{
                 console.log(res);
             })
-            this.getItemsList();
         }
     },
 
